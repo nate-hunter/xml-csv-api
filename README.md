@@ -2,8 +2,11 @@
 
 ## TECHNOLOGY USED:
 - Vagrant
+- Python virtual environment (venv)
+- Django
+- Django Restframework
 
-### Setting up a Vagrant file and connecting to a Vagrant Box
+### To set up a Vagrant file and connect to a Vagrant Box:
 In terminal:
 ```bash
 	$ vagrant init ubuntu/bionic64
@@ -27,3 +30,29 @@ In terminal:
 ```bash
 	$ python test.py
 ```
+
+### To create a Python virtual environment:
+In terminal, in `/vagrant`:
+```bash
+	$ python -m venv ~/env
+	$ source ~/env/bin/activate
+	=> (env) vagrant@ubuntu-bionic:/vagrant$
+```
+
+To deactivate the virtual environment:
+```bash
+	$ deactivate
+```
+
+### To install the project's packages:
+In terminal:
+```bash
+	$ pip install -r requirements.txt
+```
+
+### To test Django server:
+In terminal:
+```bash
+	$ python manage.py runserver 0.0.0.0:8000
+```
+
