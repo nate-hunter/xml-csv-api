@@ -56,3 +56,10 @@ In terminal:
 	$ python manage.py runserver 0.0.0.0:8000
 ```
 
+### To run initial migrations in the project:
+In terminal:
+```bash
+	$ python manage.py migrate
+```
+
+
